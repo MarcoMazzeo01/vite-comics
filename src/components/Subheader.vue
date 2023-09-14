@@ -36,8 +36,8 @@ header {
 .menu_list {
   display: flex;
   justify-content: center;
-  gap: 80px;
-  padding: 4em 0;
+  gap: 50px;
+  padding: 2em 0;
 
   li {
     display: flex;
