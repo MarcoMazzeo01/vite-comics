@@ -2,12 +2,28 @@
 import Header from "./components/Header.vue";
 import Subheader from "./components/Subheader.vue";
 import Footer from "./components/Footer.vue";
+import Cards from "./components/Cards.vue";
+
+import comics from "../src/assets/dc-comics.json";
 
 export default {
+  data() {
+    return {
+      comics,
+    };
+  },
+
   components: {
     Header,
     Subheader,
     Footer,
+    Cards,
+  },
+
+  mounted() {
+    comics.forEach((arg) => {
+      console.log(arg.price);
+    });
   },
 };
 </script>
@@ -16,7 +32,7 @@ export default {
   <Header />
   <main id="main_content">
     <div class="container__main">
-      <h1 class="text-white">TEST</h1>
+      <Cards :comics="comics" />
     </div>
   </main>
   <Subheader />
