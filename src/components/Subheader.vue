@@ -42,6 +42,7 @@ header {
   li {
     display: flex;
     align-items: center;
+    gap: 15px;
     color: white;
     text-transform: uppercase;
     font-family: $menu-font;
