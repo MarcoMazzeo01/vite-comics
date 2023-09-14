@@ -2,7 +2,7 @@
 
 <template>
   <header class="container-fluid bg-white">
-    <div class="container d-flex justify-content-around p-0">
+    <div class="container d-flex justify-content-around">
       <div id="logo">
         <img src="\img\dc-logo.png" alt="dc_logo" />
       </div>
@@ -10,7 +10,7 @@
       <div>
         <ul class="menu_list mb-0">
           <li>Characters</li>
-          <li>Comics</li>
+          <li id="active">Comics</li>
           <li>Movies</li>
           <li>TV</li>
           <li>Games</li>
@@ -25,8 +25,7 @@
 
 <style lang="scss" scoped>
 header {
-  height: 120px;
-  padding: 10px 0;
+  height: 150px;
 
   .container {
     height: 100%;
@@ -60,7 +59,11 @@ header {
     text-transform: uppercase;
   }
 
-  li:hover {
+  #active {
+    border-bottom: 6px $accent-color solid;
+  }
+
+  li:hover:not(#active) {
     animation-name: borderGrow;
     animation-fill-mode: forwards;
     animation-duration: 0.2s;
