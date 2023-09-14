@@ -1,6 +1,4 @@
-<script>
-console.log("WHAT");
-</script>
+<script></script>
 
 <template>
   <header class="container-fluid bg-white">
@@ -10,7 +8,7 @@ console.log("WHAT");
       </div>
 
       <div>
-        <ul id="menu_list" class="mb-0">
+        <ul class="menu_list mb-0">
           <li>Characters</li>
           <li>Comics</li>
           <li>Movies</li>
@@ -46,7 +44,7 @@ header {
   }
 }
 
-#menu_list {
+.menu_list {
   gap: 20px;
   height: 100%;
   font-family: $menu-font;

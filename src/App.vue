@@ -1,9 +1,11 @@
 <script>
 import Header from "./components/Header.vue";
+import Subheader from "./components/Subheader.vue";
 
 export default {
   components: {
     Header,
+    Subheader,
   },
 };
 </script>
@@ -15,6 +17,7 @@ export default {
       <h1 class="text-white">TEST</h1>
     </div>
   </main>
+  <Subheader />
 </template>
 
 <style lang="scss">
@@ -29,7 +32,7 @@ export default {
   }
 }
 
-#menu_list {
+.menu_list {
   display: flex;
 
   li {
